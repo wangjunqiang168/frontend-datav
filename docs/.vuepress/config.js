@@ -1,7 +1,7 @@
 module.exports = {
-  title: '数据可视化（Sam老师原创）',
+  title: '中移在线数据可视化',
   base: '/datav-docs/',
-  description: '「慕课外卖」数据大屏配套学习官网',
+  description: '数据可视化开发文档',
   markdown: {
     // markdown-it-anchor 的选项
     anchor: { permalink: false },
@@ -10,7 +10,7 @@ module.exports = {
     lineNumbers: true
   },
   head: [
-    ['link', { rel: 'icon', href: `logo.jpg` }],
+    ['link', { rel: 'icon', href: `favicon.ico` }],
     ['meta', { name: 'theme-color', content: '#1890ff' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
@@ -22,7 +22,7 @@ module.exports = {
       { text: '首页', link: '/' },
       { text: '指南', link: '/guide/' },
       { text: 'API', link: '/api/' },
-      { text: '购买课程', link: 'https://coding.imooc.com/class/445.html' }
+      { text: 'SmartChart', link: 'https://www.smartchart.cn/echart/show/' }
     ],
     navbar: true,
     sidebar: {
@@ -36,7 +36,7 @@ module.exports = {
           ]
         },
         {
-          title: '基础阶段',
+          title: '可视化技术基础',
           collapsable: true,
           children: [
             'guide/scene',
@@ -63,16 +63,7 @@ module.exports = {
           ]
         },
         {
-          title: '数据报表项目',
-          collapsable: true,
-          children: [
-            'report/guide',
-            'report/qa',
-            'report/summary',
-          ]
-        },
-        {
-          title: '数据大屏项目',
+          title: '数据大屏项目进阶',
           collapsable: true,
           children: [
             'screen/vue3',
@@ -81,6 +72,15 @@ module.exports = {
             'screen/echartsComplex',
             'screen/echartsOrderMap',
             'screen/echartsgl'
+          ]
+        },
+        {
+          title: '数据报表项目',
+          collapsable: true,
+          children: [
+            'report/guide',
+            'report/qa',
+            'report/summary',
           ]
         },
         {
